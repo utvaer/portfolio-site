@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 function MainNav() {
   return (
@@ -20,6 +21,12 @@ function MainNav() {
           </li>
           <li>
             <NavLink to="/contact">Contact</NavLink>
+          </li>
+          <li>
+            <FaLinkedinIn />
+          </li>
+          <li>
+            <FaGithub />
           </li>
         </ul>
       </nav>

@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -6,8 +7,7 @@ function Footer() {
       <p>Current location: Trondheim</p>
       <p>Copyright @Utvaer</p>
       <div>
-        <span>Github</span>
-        <span>LinkedIn</span>
+        <FaGithub /> <FaLinkedinIn />
       </div>
     </footer>
   );
