@@ -5,7 +5,7 @@ function MainNav() {
   return (
     <header>
       <div>
-        <NavLink to="/">Tiffany Utvaer Gasser</NavLink>
+        <NavLink to="/">Tiffany Linn Utv&aelig;r Gasser</NavLink>
       </div>
       <nav>
         <ul>
