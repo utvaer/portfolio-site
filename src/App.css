@@ -1,0 +1,17 @@
+:root {
+  --typography-body: ivypresto-text, serif;
+  --typography-heading: minerva-modern, sans-serif;
+  --color-primary: #ff6bfd;
+  --color-secondary: #707070;
+  --color-background: rgba(91, 83, 86, 0.1);
+  --color-font-light: #fff;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--typography-body);
+}

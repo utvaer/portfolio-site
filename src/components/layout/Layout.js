@@ -1,12 +1,13 @@
 import React from "react";
-import Footer from "./Footer";
-import MainNav from "./MainNav";
+import Footer from "./footer/Footer";
+import MainNav from "./mainNav/MainNav";
+import styles from "./Layout.module.css";
 
 function Layout(props) {
   return (
     <div>
       <MainNav />
-      <main>{props.children}</main>
+      <main className={styles.layout}>{props.children}</main>
       <Footer />
     </div>
   );

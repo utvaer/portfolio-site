@@ -1,11 +1,12 @@
 import React from "react";
 import portrait from "../img/portrait.png";
 import book from "../img/book.jpeg";
+import PageHeading from "../components/typography/PageHeading";
 
 function About() {
   return (
     <div>
-      <h1>About me</h1>
+      <PageHeading>About me.</PageHeading>
       <img src={portrait} alt="portrait" />
       <p>
         I’m an anthropologist turned frontend developer. I’m familiar with

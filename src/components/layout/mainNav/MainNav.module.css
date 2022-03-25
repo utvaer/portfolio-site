@@ -1,0 +1,21 @@
+.header {
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+.header a {
+  text-decoration: none;
+  color: var(--color-font-light);
+}
+.logo {
+  font-weight: bold;
+}
+.links {
+  list-style: none;
+  display: flex;
+  color: var(--color-font-light);
+}
+.link {
+  padding-right: 1em;
+}

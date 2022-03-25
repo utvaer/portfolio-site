@@ -1,9 +1,10 @@
 import React from "react";
+import PageHeading from "../components/typography/PageHeading";
 
 function Contact() {
   return (
     <div>
-      <h1>Contact</h1>
+      <PageHeading>Contact</PageHeading>
       <div>
         <p>tiffany.u.gasser@gmail.com</p>
         <p>+47 930 304 63</p>

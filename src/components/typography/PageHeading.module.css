@@ -1,0 +1,5 @@
+.heading {
+  font-size: 3rem;
+  font-family: var(--typography-heading);
+  margin: 2rem 0;
+}

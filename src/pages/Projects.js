@@ -1,9 +1,10 @@
 import React from "react";
+import PageHeading from "../components/typography/PageHeading";
 
 function Projects() {
   return (
     <div>
-      <h1>Projects</h1>
+      <PageHeading>Projects</PageHeading>
       <div>
         <div>
           <h3>Urban Feet</h3>
