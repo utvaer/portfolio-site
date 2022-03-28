@@ -1,7 +1,7 @@
 .footer {
   background-color: var(--color-primary);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 2rem;
   align-items: baseline;
 }
