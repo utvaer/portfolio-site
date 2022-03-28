@@ -1,0 +1,12 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  text-align: right;
+  background-color: aqua;
+}
+.academic {
+  display: flex;
+}

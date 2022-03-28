@@ -1,9 +1,11 @@
 .btn {
+  font-family: var(--typography-body);
   background-color: var(--color-primary);
   cursor: pointer;
   border: 1px solid var(--color-primary);
   border-radius: 4px;
-  padding: 0.5rem 3rem;
+  padding: 0.6rem 3rem;
+  margin: 2rem 0;
   text-transform: uppercase;
-  box-shadow: 10px 5px 5px var(--color-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }

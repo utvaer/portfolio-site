@@ -1,13 +1,17 @@
 import React from "react";
 import PageHeading from "../components/typography/PageHeading";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 function Contact() {
   return (
     <div>
       <PageHeading>Contact</PageHeading>
       <div>
-        <p>tiffany.u.gasser@gmail.com</p>
-        <p>+47 930 304 63</p>
+        <FaEnvelope />
+        <span>tiffany.u.gasser@gmail.com</span>
+
+        <FaPhone />
+        <span>+47 930 304 63</span>
         <p>
           I always love a call or an email, or just message me here directly:
         </p>

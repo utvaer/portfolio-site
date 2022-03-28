@@ -1,0 +1,7 @@
+.projects {
+  display: flex;
+}
+
+.thumbnail {
+  background-color: var(--color-primary);
+}
