@@ -7,8 +7,9 @@ import Skills from "../components/textContent/aboutPage/Skills";
 import SoftSkills from "../components/textContent/aboutPage/SoftSkills";
 import AboutText from "../components/textContent/aboutPage/AboutText";
 import AboutLayout from "../components/layout/AboutLayout";
-import Button from "../components/buttons/Button";
 import styles from "../components/layout/AboutLayout.module.css";
+import CV from "../docs/CV-Gasser.pdf";
+import LinkBtn from "../components/buttons/LinkBtn";
 
 function About() {
   return (
@@ -30,9 +31,9 @@ function About() {
           </AboutText>
         </div>
       </div>
-      <div className={styles.action}>
-        <Button>Download CV</Button>
-      </div>
+      <LinkBtn myLink={CV} target="_blank" rel="noopener noreferrer">
+        View CV
+      </LinkBtn>
 
       <section className={styles.right}>
         <Title>Skills.</Title>
