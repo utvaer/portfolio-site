@@ -12,16 +12,36 @@ function MainNav() {
       <nav>
         <ul className={styles.links}>
           <li className={styles.link}>
-            <NavLink to="/">Home</NavLink>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/"
+            >
+              Home
+            </NavLink>
           </li>
           <li className={styles.link}>
-            <NavLink to="/about">About</NavLink>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/about"
+            >
+              About
+            </NavLink>
           </li>
           <li className={styles.link}>
-            <NavLink to="/projects">Projects</NavLink>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/projects"
+            >
+              Projects
+            </NavLink>
           </li>
           <li className={styles.link}>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink
+              className={(navData) => (navData.isActive ? styles.active : "")}
+              to="/contact"
+            >
+              Contact
+            </NavLink>
           </li>
           <li className={styles.link}>
             <FaLinkedinIn />
