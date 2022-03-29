@@ -31,9 +31,8 @@ function About() {
           </AboutText>
         </div>
       </div>
-      <LinkBtn myLink={CV} target="_blank" rel="noopener noreferrer">
-        View CV
-      </LinkBtn>
+
+      <LinkBtn myLink={CV}>View CV</LinkBtn>
 
       <section className={styles.right}>
         <Title>Skills.</Title>

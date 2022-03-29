@@ -1,13 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styles from "./Button.module.css";
 
 function LinkBtn(props) {
   const myLink = props.myLink;
   return (
-    <Link className={styles.btn} href={myLink}>
+    <a
+      className={styles.btn}
+      href={myLink}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       {props.children}
-    </Link>
+    </a>
   );
 }
 

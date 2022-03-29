@@ -1,0 +1,8 @@
+.project {
+  border: 1px solid black;
+}
+
+.action {
+  background-color: pink;
+  display: flex;
+}

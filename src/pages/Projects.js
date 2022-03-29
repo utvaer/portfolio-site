@@ -1,10 +1,18 @@
 import React from "react";
 import PageHeading from "../components/typography/PageHeading";
+import { ProjectData } from "../components/projectsData/ProjectsData";
+import ProjectList from "../components/projects/ProjectList";
 
 function Projects() {
   return (
     <div>
       <PageHeading>Projects</PageHeading>
+      <ProjectList projects={ProjectData} />
+      <ul>
+        {ProjectData.map((project) => {
+          return <li key={project.id}>{project.title}</li>;
+        })}
+      </ul>
       <div>
         <div>
           <h3>Urban Feet</h3>
