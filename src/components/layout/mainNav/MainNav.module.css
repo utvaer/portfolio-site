@@ -1,4 +1,6 @@
 .header {
+  font-family: var(--typography-heading);
+  text-transform: uppercase;
   background-color: var(--color-secondary);
   display: flex;
   justify-content: space-between;
