@@ -1,15 +1,18 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import logo from "../../../img/logo.svg";
 import styles from "./MainNav.module.css";
 
 function MainNav() {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <NavLink to="/">Tiffany Linn Utv&aelig;r Gasser</NavLink>
+        <NavLink to="/">
+          <img src={logo} alt="logo" />
+        </NavLink>
       </div>
-      <nav>
+      <nav className={styles.nav}>
         <ul className={styles.links}>
           <li className={styles.link}>
             <NavLink
@@ -44,10 +47,22 @@ function MainNav() {
             </NavLink>
           </li>
           <li className={styles.link}>
-            <FaLinkedinIn />
+            <a
+              href="https://www.linkedin.com/in/tiffany-utv%C3%A6r-gasser-023336115/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedinIn />
+            </a>
           </li>
           <li className={styles.link}>
-            <FaGithub />
+            <a
+              href="https://github.com/utvaer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
           </li>
         </ul>
       </nav>

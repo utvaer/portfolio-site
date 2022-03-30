@@ -1,7 +1,11 @@
 .footer {
   background-color: var(--color-primary);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 2rem;
-  align-items: baseline;
+  align-items: center;
+  text-align: center;
+}
+.links a {
+  color: #111;
 }
