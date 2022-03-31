@@ -10,26 +10,34 @@ import AboutLayout from "../components/layout/AboutLayout";
 import styles from "../components/layout/AboutLayout.module.css";
 import CV from "../docs/CV-Gasser.pdf";
 import LinkBtn from "../components/buttons/LinkBtn";
+import { Col, Row } from "react-grid-system";
 
 function About() {
   return (
     <AboutLayout>
       <PageHeading>About me.</PageHeading>
       <div className={styles.banner}>
-        <AboutImg />
-        <div>
-          <AboutText>
-            I’m a social anthropologist turned frontend developer. Familiar with
-            technologies such as html, css, javascript, react, sass, bootstrap.
-            Recently, I’m exploring sky technologies, web3 and everything nfts.
-          </AboutText>
-          <AboutText>
-            My interest in web dev stems from a curiosity on how people really
-            use the web. I have a systemic approach, and with a background in
-            research, I love to combine my backgrounds to approach new
-            challenges.
-          </AboutText>
-        </div>
+        <Row>
+          <Col xs={12} sm={6}>
+            <AboutImg />
+          </Col>
+          <Col xs={12} sm={6}>
+            <div>
+              <AboutText>
+                I’m a social anthropologist turned frontend developer. Familiar
+                with technologies such as html, css, javascript, react, sass,
+                bootstrap. Recently, I’m exploring sky technologies, web3 and
+                everything nfts.
+              </AboutText>
+              <AboutText>
+                My interest in web dev stems from a curiosity on how people
+                really use the web. I have a systemic approach, and with a
+                background in research, I love to combine my backgrounds to
+                approach new challenges.
+              </AboutText>
+            </div>
+          </Col>
+        </Row>
       </div>
 
       <LinkBtn myLink={CV}>View CV</LinkBtn>
