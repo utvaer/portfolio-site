@@ -13,6 +13,8 @@ function ProjectList(props) {
           short={project.short}
           description={project.description}
           tools={project.tools}
+          github={project.github}
+          site={project.site}
         />
       ))}
     </ul>

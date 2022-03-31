@@ -4,24 +4,28 @@ import HomeImg from "../components/ui/imageDisplay/HomeImg";
 import HomeLayout from "../components/layout/HomeLayout";
 import HomeText from "../components/textContent/HomeText";
 import PageHeading from "../components/typography/PageHeading";
-import styles from "../components/layout/HomeLayout.module.css";
+import { Col, Row } from "react-grid-system";
 
 function Home() {
   return (
     <HomeLayout>
-      <div className={styles.column1}>
-        <PageHeading>
-          Hi, my name is <br /> Tiffany.
-        </PageHeading>
-        <HomeText>
-          A multicultural frontend developer with a background in research and
-          writing.
-        </HomeText>
-        <Button>Projects</Button>
-      </div>
-      <div className={styles.column2}>
-        <HomeImg />
-      </div>
+      <Row>
+        <Col xs={12} md={8}>
+          <PageHeading>
+            Hi, my name is <br /> Tiffany.
+          </PageHeading>
+          <HomeText>
+            A multicultural frontend developer with a background in research and
+            writing.
+          </HomeText>
+        </Col>
+
+        <Col xs={12} md={4}>
+          {" "}
+          <HomeImg />
+        </Col>
+      </Row>
+      <Button>Projects</Button>
     </HomeLayout>
   );
 }

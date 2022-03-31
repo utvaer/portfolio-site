@@ -18,10 +18,10 @@ function About() {
       <PageHeading>About me.</PageHeading>
       <div className={styles.banner}>
         <Row>
-          <Col xs={12} sm={6}>
+          <Col xs={12} md={4}>
             <AboutImg />
           </Col>
-          <Col xs={12} sm={6}>
+          <Col xs={12} md={8}>
             <div>
               <AboutText>
                 I’m a social anthropologist turned frontend developer. Familiar
@@ -63,20 +63,27 @@ function About() {
 
       <Title>Academic Background.</Title>
       <section className={styles.academic}>
-        <AboutText>
-          As an anthropologist, I have worked on a collaborative project on
-          Islam, radicalization and why most young Muslims are not radicalized.
-          The findings were published (in Norwegian). I personally looked into
-          how online tools are actively used in defining one’s religiousness.
-        </AboutText>
-        <a
-          href="https://www.universitetsforlaget.no/unge-muslimske-stemmer"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <BookCover />
-          <span>Unge muslimske stemmer. Om tro og ekstremisme</span>
-        </a>
+        <Row>
+          <Col xs={12} md={8}>
+            <AboutText>
+              As an anthropologist, I have worked on a collaborative project on
+              Islam, radicalization and why most young Muslims are not
+              radicalized. The findings were published (in Norwegian). I
+              personally looked into how online tools are actively used in
+              defining one’s religiousness.
+            </AboutText>
+          </Col>
+          <Col xs={12} md={4}>
+            <a
+              href="https://www.universitetsforlaget.no/unge-muslimske-stemmer"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <BookCover />
+              <span>Unge muslimske stemmer. Om tro og ekstremisme</span>
+            </a>
+          </Col>
+        </Row>
       </section>
     </AboutLayout>
   );
