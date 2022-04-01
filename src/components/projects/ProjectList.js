@@ -13,6 +13,7 @@ function ProjectList(props) {
           short={project.short}
           description={project.description}
           tools={project.tools}
+          image={project.image}
           github={project.github}
           site={project.site}
         />

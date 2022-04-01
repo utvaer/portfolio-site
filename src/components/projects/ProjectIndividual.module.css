@@ -1,10 +1,25 @@
 .project {
-  border: 1px solid var(--color-secondary);
+  background-color: var(--color-font-light);
+  border: none;
   border-radius: 4px;
-  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 0.5rem 2rem 0.5rem;
+  padding: 0 0.5rem;
+  max-width: 600px;
 }
-
+.img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 0 0 4px 4px;
+}
+.text {
+  max-width: 80%;
+  margin: 1rem auto;
+}
+.tools {
+  color: var(--color-secondary);
+}
 .action {
-  background-color: pink;
   display: flex;
 }

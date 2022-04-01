@@ -5,15 +5,22 @@ import styles from "./ProjectIndividual.module.css";
 
 function ProjectIndividual(props) {
   return (
-    <li className={styles.project}>
-      <div>
-        <Title>{props.title}</Title>
-        <p>{props.description}</p>
-        <p>{props.tools}</p>
-      </div>
-      <div className={styles.action}>
-        <LinkBtn myLink={props.site}>Live site</LinkBtn>
-        <LinkBtn myLink={props.github}>Github</LinkBtn>
+    <li>
+      <Title>{props.title}</Title>
+      <div className={styles.project}>
+        <img
+          src={require("../../img/" + props.image + ".png")}
+          alt={props.short}
+          className={styles.img}
+        />
+        <div className={styles.text}>
+          <p className={styles.tools}>{props.tools}</p>
+          <p>{props.description}</p>
+        </div>
+        <div className={styles.action}>
+          <LinkBtn myLink={props.site}>Live site</LinkBtn>
+          <LinkBtn myLink={props.github}>Github</LinkBtn>
+        </div>
       </div>
     </li>
   );

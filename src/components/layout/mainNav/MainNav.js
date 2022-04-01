@@ -1,23 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
 import logo from "../../../img/logo.svg";
 import styles from "./MainNav.module.css";
 
 function MainNav() {
+  const [open, setOpen] = useState(false);
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
+
+  const closeMenu = () => {
+    setOpen(false);
+  };
+
   return (
-    <header className={styles.header}>
-      <div className={styles.logo}>
-        <NavLink to="/">
+    <header>
+      <nav className={styles.navbar}>
+        <NavLink className={styles.logo} to="/">
           <img src={logo} alt="logo" />
         </NavLink>
-      </div>
-      <nav className={styles.nav}>
-        <ul className={styles.links}>
+
+        <div onClick={handleClick} className={styles.icon}>
+          {open ? <HiX /> : <HiMenuAlt3 />}
+        </div>
+
+        <ul className={open ? styles.navLinks.active : styles.navLinks}>
           <li className={styles.link}>
             <NavLink
               className={(navData) => (navData.isActive ? styles.active : "")}
               to="/"
+              onClick={closeMenu}
             >
               Home
             </NavLink>
@@ -26,6 +41,7 @@ function MainNav() {
             <NavLink
               className={(navData) => (navData.isActive ? styles.active : "")}
               to="/about"
+              onClick={closeMenu}
             >
               About
             </NavLink>
@@ -34,6 +50,7 @@ function MainNav() {
             <NavLink
               className={(navData) => (navData.isActive ? styles.active : "")}
               to="/projects"
+              onClick={closeMenu}
             >
               Projects
             </NavLink>
@@ -42,6 +59,7 @@ function MainNav() {
             <NavLink
               className={(navData) => (navData.isActive ? styles.active : "")}
               to="/contact"
+              onClick={closeMenu}
             >
               Contact
             </NavLink>
@@ -52,7 +70,7 @@ function MainNav() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaLinkedinIn />
+              <FaLinkedinIn onClick={closeMenu} />
             </a>
           </li>
           <li className={styles.link}>
@@ -61,7 +79,7 @@ function MainNav() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaGithub />
+              <FaGithub onClick={closeMenu} />
             </a>
           </li>
         </ul>

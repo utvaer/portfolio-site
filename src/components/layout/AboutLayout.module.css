@@ -1,12 +1,7 @@
-/*.banner {
-  display: flex;
-  justify-content: space-between;
-}*/
+.about {
+  padding: 1em;
+}
 
 .right {
   text-align: right;
-  background-color: aqua;
 }
-/*.academic {
-  display: flex;
-}*/
