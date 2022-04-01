@@ -74,14 +74,7 @@ function About() {
             </AboutText>
           </Col>
           <Col xs={12} md={4}>
-            <a
-              href="https://www.universitetsforlaget.no/unge-muslimske-stemmer"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <BookCover />
-              <span>Unge muslimske stemmer. Om tro og ekstremisme</span>
-            </a>
+            <BookCover />
           </Col>
         </Row>
       </section>

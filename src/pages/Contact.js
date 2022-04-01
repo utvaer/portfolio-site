@@ -6,7 +6,7 @@ import PageHeading from "../components/typography/PageHeading";
 function Contact() {
   return (
     <div>
-      <PageHeading>Contact</PageHeading>
+      <PageHeading>Contact.</PageHeading>
       <ContactDetails />
       <ContactForm />
     </div>

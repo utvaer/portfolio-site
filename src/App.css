@@ -14,4 +14,5 @@
 
 body {
   font-family: var(--typography-body);
+  background-color: var(--color-background);
 }

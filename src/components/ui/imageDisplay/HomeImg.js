@@ -1,5 +1,5 @@
 import React from "react";
-import portraitmask from "../../../img/portraitmask.png";
+import portraitmask from "../../../img/self-bw.jpg";
 import styles from "./HomeImg.module.css";
 
 function HomeImg() {

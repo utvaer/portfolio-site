@@ -1,5 +1,5 @@
 import React from "react";
-import portrait from "../../../img/portrait.png";
+import portrait from "../../../img/portrait.jpg";
 import styles from "./AboutImg.module.css";
 
 function AboutImg() {

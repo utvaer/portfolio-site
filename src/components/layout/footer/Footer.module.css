@@ -1,5 +1,7 @@
 .footer {
-  background-color: var(--color-primary);
+  font-family: var(--typography-heading);
+  background-color: var(--color-secondary);
+  color: var(--color-font-light);
   display: flex;
   justify-content: space-between;
   padding: 2rem;
@@ -7,5 +9,5 @@
   text-align: center;
 }
 .links a {
-  color: #111;
+  color: var(--color-font-light);
 }

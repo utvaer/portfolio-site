@@ -4,9 +4,16 @@ import styles from "./BookCover.module.css";
 
 function BookCover() {
   return (
-    <div>
-      <img className={styles.book} src={book} alt="book cover" />
-    </div>
+    <>
+      <a
+        href="https://www.universitetsforlaget.no/unge-muslimske-stemmer"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img className={styles.book} src={book} alt="book cover" />
+        <p>Unge muslimske stemmer. Om tro og ekstremisme</p>
+      </a>
+    </>
   );
 }
 

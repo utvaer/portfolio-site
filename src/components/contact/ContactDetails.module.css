@@ -1,0 +1,15 @@
+.container {
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color-font-light);
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+.contact span {
+  margin-left: 1rem;
+}
