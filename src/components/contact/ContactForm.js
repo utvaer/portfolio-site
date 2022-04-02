@@ -1,11 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "./ContactForm.module.css";
 import Title from "../typography/Title";
 import { Col, Row } from "react-grid-system";
+import Message from "./Message";
 
 function ContactForm(props) {
   const form = useRef();
+
+  const [message, showMessage] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -25,7 +28,8 @@ function ContactForm(props) {
           console.log(error.text);
         }
       );
-    alert("Email sent");
+    e.target.reset();
+    showMessage(true);
   };
   return (
     <Row>
@@ -56,6 +60,7 @@ function ContactForm(props) {
           <button className={styles.btn} type="submit" value="Send">
             Send
           </button>
+          <div>{message ? <Message /> : null}</div>
         </form>
       </Col>
     </Row>

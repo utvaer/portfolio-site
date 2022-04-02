@@ -27,7 +27,11 @@ function MainNav() {
           {open ? <HiX /> : <HiMenuAlt3 />}
         </div>
 
-        <ul className={open ? styles.navLinks.active : styles.navLinks}>
+        <ul
+          className={
+            open ? `${styles.navLinks} ${styles.active}` : `${styles.navLinks}`
+          }
+        >
           <li className={styles.link}>
             <NavLink
               className={(navData) => (navData.isActive ? styles.active : "")}

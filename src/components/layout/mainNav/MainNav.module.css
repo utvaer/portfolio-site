@@ -45,6 +45,10 @@
     top: 80px;
     left: -100%;
     transition: 0.5s all;
+  }
+  .navLinks.active {
+    left: 0;
+    background-color: var(--color-secondary);
     z-index: 9;
   }
 
