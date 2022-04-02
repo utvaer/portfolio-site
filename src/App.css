@@ -20,7 +20,6 @@ body {
   font-family: var(--typography-body);
   background-color: var(--color-background);
 }
-
 #root {
   display: flex;
   flex-direction: column;

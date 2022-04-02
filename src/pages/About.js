@@ -25,10 +25,12 @@ function About() {
             <Col xs={12} md={8}>
               <div>
                 <AboutText>
-                  I’m a social anthropologist turned frontend developer.
-                  Familiar with technologies such as html, css, javascript,
-                  react, sass, bootstrap. Recently, I’m exploring sky
-                  technologies, web3 and everything nfts.
+                  I am a social anthropologist turned frontend developer. With a
+                  multilingual background, I love the linguistics aspect of
+                  learning different programming languages. Familiar with
+                  technologies such as html, css, javascript, react, sass,
+                  bootstrap, I have recently grown curious of backend
+                  development, web3 and everything nfts.
                 </AboutText>
                 <AboutText>
                   My interest in web dev stems from a curiosity on how people
