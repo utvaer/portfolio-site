@@ -6,7 +6,7 @@ export const ProjectData = [
     description:
       "Personal project of an e-commerce platform for sneakers, with a login access in order to alternate the products’ database.",
     tools: "HTML, CSS / Javascript / Strapi / Bootstrap / Sass",
-    image: "passporttales",
+    image: "urbanfeet",
     github: "https://github.com/utvaer/tiffany-gasser-semester-project-2",
     site: "https://linnscape.com/sp2/",
   },

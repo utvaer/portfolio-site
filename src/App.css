@@ -11,8 +11,18 @@
   margin: 0;
   padding: 0;
 }
+html,
+body {
+  height: 100%;
+}
 
 body {
   font-family: var(--typography-body);
   background-color: var(--color-background);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }

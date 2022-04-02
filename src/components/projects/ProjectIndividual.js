@@ -19,7 +19,9 @@ function ProjectIndividual(props) {
         </div>
         <div className={styles.action}>
           <LinkBtn myLink={props.site}>Live site</LinkBtn>
-          <LinkBtn myLink={props.github}>Github</LinkBtn>
+          <LinkBtn variant="btn2" myLink={props.github}>
+            Github
+          </LinkBtn>
         </div>
       </div>
     </li>

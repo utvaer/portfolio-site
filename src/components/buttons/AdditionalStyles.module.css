@@ -1,0 +1,8 @@
+.btn2 {
+  color: var(--color-primary);
+  background-color: var(--color-font-light);
+}
+.btn2:hover {
+  color: #111;
+  background-color: var(--color-primary);
+}

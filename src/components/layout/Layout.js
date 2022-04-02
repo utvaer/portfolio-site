@@ -6,8 +6,10 @@ import styles from "./Layout.module.css";
 function Layout(props) {
   return (
     <>
-      <MainNav />
-      <main className={styles.layout}>{props.children}</main>
+      <div className={styles.wrapper}>
+        <MainNav />
+        <main className={styles.layout}>{props.children}</main>
+      </div>
       <Footer />
     </>
   );
